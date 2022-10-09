@@ -129,25 +129,6 @@ public class Using_array {
 
   
     
-        
-
-
-    public static void main(String str[]) throws FileNotFoundException{
-        
-        File f = new File(str[0]);
-        
-        Using_array A = new Using_array(f,Integer.parseInt(str[1]));
-
-
-        A.read();
-        A.printStatus();
-
-    }
-
-    
-
-
-
 
 
 }
