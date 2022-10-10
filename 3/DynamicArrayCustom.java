@@ -112,7 +112,7 @@ public class DynamicArrayCustom
         System.out.println("The integer dynamic array structure is built in "+ this.statusInformations.get("a") +" milliseconds.");
         System.out.println("An integer is inserted into the first index of the dynamic array in "+this.statusInformations.get("b")+" milliseconds.");
         System.out.println("An integer is inserted into the 900,000th index of the dynamic array in "+this.statusInformations.get("c")+" milliseconds.");
-        System.out.println("An integer, which is "+this.statusInformations.get("d")+" , is read from the index 900,000 of the dynamic array in "+this.statusInformations.get("d")+" milliseconds.");
-        System.out.println("An integer, which is "+this.statusInformations.get("e")+" , is read from the index 9 of the dynamic array in "+this.statusInformations.get("e")+" milliseconds.");
+        System.out.println("An integer, which is "+this.getAtIndex(900000)+" , is read from the index 900,000 of the dynamic array in "+this.statusInformations.get("d")+" milliseconds.");
+        System.out.println("An integer, which is "+this.getAtIndex(9)+" , is read from the index 9 of the dynamic array in "+this.statusInformations.get("e")+" milliseconds.");
     }
 }
