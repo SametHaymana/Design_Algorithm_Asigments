@@ -1,5 +1,3 @@
-package pa1;
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -99,6 +97,9 @@ public class DynamicArrayCustom
             if(index == 900_000){
                 this.statusInformations.put("d",this.timer.getElepsedTime());
             }
+            else if (index == 45_000_000){
+                this.statusInformations.put("f",this.timer.getElepsedTime());
+            }
             else if (index == 9){
                 this.statusInformations.put("e",this.timer.getElepsedTime());
             }
@@ -130,8 +131,15 @@ public class DynamicArrayCustom
     public void printStatus(){
         System.out.println("The integer dynamic array structure is built in "+ this.statusInformations.get("a") +" milliseconds.");
         System.out.println("An integer is inserted into the first index of the dynamic array in "+this.statusInformations.get("b")+" milliseconds.");
-        System.out.println("An integer is inserted into the 900,000th index of the dynamic array in "+this.statusInformations.get("c")+" milliseconds.");
-        System.out.println("An integer, which is "+this.statusInformations.get("d")+" , is read from the index 900,000 of the dynamic array in "+this.statusInformations.get("d")+" milliseconds.");
+        System.out.println("An integer is inserted into the last index of the dynamic array in "+this.statusInformations.get("c")+" milliseconds.");
+        if (this.statusInformations.get("d") != null){
+            System.out.println("An integer is inserted into the 900,000th index of the dynamic array in "+this.statusInformations.get("d")+" milliseconds.");
+        }
+        else if (this.statusInformations.get("f") != null){
+            System.out.println("An integer is inserted into the 45,000,000th index of the dynamic array in "+this.statusInformations.get("f")+" milliseconds.");
+
+        }
+
         System.out.println("An integer, which is "+this.statusInformations.get("e")+" , is read from the index 9 of the dynamic array in "+this.statusInformations.get("e")+" milliseconds.");
     }
 }
