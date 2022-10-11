@@ -1,3 +1,6 @@
+import java.util.HashMap;
+import java.util.Map;
+
 public class DynamicArrayCustom
 {
     private int array[];
